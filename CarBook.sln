@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Domain", "Core\CarB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4FEB65F9-165F-4762-8A5F-1ED7842C81A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Persistance", "Infrastucture\CarBook.Persistance\CarBook.Persistance.csproj", "{4FEAA1EE-588A-4031-B076-C2DBFCA2958D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Persistance", "Infrastucture\CarBook.Persistance\CarBook.Persistance.csproj", "{4FEAA1EE-588A-4031-B076-C2DBFCA2958D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{853F2D01-52B9-46A3-8658-74129D06476F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.WepApi", "Presentation\CarBook.WepApi\CarBook.WepApi.csproj", "{05648F63-687C-4381-B79A-68019F86A0F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{4FEAA1EE-588A-4031-B076-C2DBFCA2958D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FEAA1EE-588A-4031-B076-C2DBFCA2958D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FEAA1EE-588A-4031-B076-C2DBFCA2958D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05648F63-687C-4381-B79A-68019F86A0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05648F63-687C-4381-B79A-68019F86A0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05648F63-687C-4381-B79A-68019F86A0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05648F63-687C-4381-B79A-68019F86A0F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E4BB08EC-6DC7-4BB2-9AB4-B07AD6AB8587} = {10580570-9C7A-4035-8F48-EBB1E7CFD96D}
 		{4FEAA1EE-588A-4031-B076-C2DBFCA2958D} = {4FEB65F9-165F-4762-8A5F-1ED7842C81A8}
+		{05648F63-687C-4381-B79A-68019F86A0F9} = {853F2D01-52B9-46A3-8658-74129D06476F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF7BACD6-DE4C-4256-9C70-3F977BE51125}

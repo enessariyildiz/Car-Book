@@ -10,7 +10,7 @@ namespace CarBook.Persistance.Context
         //Proje Canlıya geçerken Conf dosyasından bağlantı adresini vereceğim, development yaparken buradan alacağım bağlantı adresini.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-T54ECK5, initial Catalog=CarBookDb; integrated Security:True;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-T54ECK5; initial Catalog=CarBookDb;Integrated Security=true;TrustServerCertificate=true;");
         }
 
         public DbSet<About> Abouts{ get; set; }
