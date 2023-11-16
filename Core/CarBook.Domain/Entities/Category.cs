@@ -1,8 +1,8 @@
 ﻿namespace CarBook.Domain.Entities
 {
-    public class Location
+    public class Category
     {
-        public int LocationId { get; set; }
+        public int CategoryId { get; set; }
         public string Name { get; set; }
     }
 }

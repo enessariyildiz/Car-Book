@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarBook.Domain.Entities
+﻿namespace CarBook.Domain.Entities
 {
     public class Car
     {
@@ -19,6 +13,8 @@ namespace CarBook.Domain.Entities
         public byte Luggage { get; set; }
         public string Fuel { get; set; }
         public string BigImageUrl { get; set; }
+        public List<CarFeature> CarFeature { get; set; }
+        public List<CarDescription> CarDescription { get; set; }
 
     }
 }
