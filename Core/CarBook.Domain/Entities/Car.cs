@@ -15,6 +15,7 @@
         public string BigImageUrl { get; set; }
         public List<CarFeature> CarFeature { get; set; }
         public List<CarDescription> CarDescription { get; set; }
+        public List<CarPricing> CarPricing { get; set; }
 
     }
 }
