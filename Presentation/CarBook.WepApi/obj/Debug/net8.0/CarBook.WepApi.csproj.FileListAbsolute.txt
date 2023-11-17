@@ -139,3 +139,5 @@ D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\re
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\CarBook.WepApi.pdb
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\CarBook.WepApi.genruntimeconfig.cache
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\ref\CarBook.WepApi.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\CarBook.Application.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\CarBook.Application.pdb

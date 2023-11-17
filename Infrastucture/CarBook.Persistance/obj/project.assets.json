@@ -1478,6 +1478,16 @@
           }
         }
       },
+      "CarBook.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CarBook.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarBook.Application.dll": {}
+        }
+      },
       "CarBook.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4017,6 +4027,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "CarBook.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/CarBook.Application/CarBook.Application.csproj",
+      "msbuildProject": "../../Core/CarBook.Application/CarBook.Application.csproj"
+    },
     "CarBook.Domain/1.0.0": {
       "type": "project",
       "path": "../../Core/CarBook.Domain/CarBook.Domain.csproj",
@@ -4025,6 +4040,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CarBook.Application >= 1.0.0",
       "CarBook.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
@@ -4059,6 +4075,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Dev\\Software\\Projects\\CarBook\\Core\\CarBook.Application\\CarBook.Application.csproj": {
+              "projectPath": "D:\\Dev\\Software\\Projects\\CarBook\\Core\\CarBook.Application\\CarBook.Application.csproj"
+            },
             "D:\\Dev\\Software\\Projects\\CarBook\\Core\\CarBook.Domain\\CarBook.Domain.csproj": {
               "projectPath": "D:\\Dev\\Software\\Projects\\CarBook\\Core\\CarBook.Domain\\CarBook.Domain.csproj"
             }
