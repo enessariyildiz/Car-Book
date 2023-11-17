@@ -248,6 +248,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "NuGet.Protocol": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

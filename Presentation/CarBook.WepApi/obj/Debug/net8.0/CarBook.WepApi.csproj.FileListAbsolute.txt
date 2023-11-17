@@ -141,3 +141,10 @@ D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\Ca
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\obj\Debug\net8.0\ref\CarBook.WepApi.dll
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\CarBook.Application.dll
 D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\CarBook.Application.pdb
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Common.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Configuration.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Packaging.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Protocol.dll
+D:\Dev\Software\Projects\CarBook\Presentation\CarBook.WepApi\bin\Debug\net8.0\NuGet.Versioning.dll
