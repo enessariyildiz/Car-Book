@@ -10,3 +10,7 @@ D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\CarBo
 D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\refint\CarBook.Application.dll
 D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\CarBook.Application.pdb
 D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\ref\CarBook.Application.dll
+D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\CarBook.Application.csproj.AssemblyReference.cache
+D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\bin\Debug\net8.0\CarBook.Domain.dll
+D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\bin\Debug\net8.0\CarBook.Domain.pdb
+D:\Dev\Software\Projects\CarBook\Core\CarBook.Application\obj\Debug\net8.0\CarBook.Application.csproj.CopyComplete

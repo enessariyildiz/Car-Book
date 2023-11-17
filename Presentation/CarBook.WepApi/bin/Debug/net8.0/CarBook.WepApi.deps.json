@@ -892,6 +892,9 @@
         }
       },
       "CarBook.Application/1.0.0": {
+        "dependencies": {
+          "CarBook.Domain": "1.0.0"
+        },
         "runtime": {
           "CarBook.Application.dll": {}
         }
