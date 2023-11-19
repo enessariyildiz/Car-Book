@@ -4,11 +4,11 @@ using CarBook.Domain.Entities;
 
 namespace CarBook.Application.Features.CQRS.Handlers.BannerHandlers
 {
-    public class RemoveBannerQueryHandler
+    public class RemoveBannerCommandHandler
     {
         private readonly IRepository<Banner> _repository;
 
-        public RemoveBannerQueryHandler(IRepository<Banner> repository)
+        public RemoveBannerCommandHandler(IRepository<Banner> repository)
         {
             _repository = repository;
         }
