@@ -15,14 +15,16 @@ namespace CarBook.WepApi.Controllers
         private readonly CreateCarCommandHandler _createCarCommandHandler;
         private readonly UpdateCarCommandHandler _updateCarCommandHandler;
         private readonly RemoveCarCommandHandler _removeCarCommandHandler;
+        private readonly GetCarWithBrandQueryHandler _getCarWithBrandQueryHandler;
 
-        public CarsController(GetCarQueryHandler getCarQueryHandler, GetCarByIdQueryHandler getCarByIdQueryHandler, CreateCarCommandHandler createCarCommandHandler, UpdateCarCommandHandler updateCarCommandHandler, RemoveCarCommandHandler removeCarCommandHandler)
+        public CarsController(GetCarQueryHandler getCarQueryHandler, GetCarByIdQueryHandler getCarByIdQueryHandler, CreateCarCommandHandler createCarCommandHandler, UpdateCarCommandHandler updateCarCommandHandler, RemoveCarCommandHandler removeCarCommandHandler, GetCarWithBrandQueryHandler getCarWithBrandQueryHandler)
         {
             _getCarQueryHandler = getCarQueryHandler;
             _getCarByIdQueryHandler = getCarByIdQueryHandler;
             _createCarCommandHandler = createCarCommandHandler;
             _updateCarCommandHandler = updateCarCommandHandler;
             _removeCarCommandHandler = removeCarCommandHandler;
+            _getCarWithBrandQueryHandler = getCarWithBrandQueryHandler;
         }
 
         [HttpGet]
@@ -58,6 +60,13 @@ namespace CarBook.WepApi.Controllers
         {
             await _updateCarCommandHandler.Handle(command);
             return Ok("Car information uptaded.");
+        }
+
+        [HttpGet("{GetCarWithBrand}")]
+        public async Task<IActionResult> GetCarWithBrand()
+        {
+            var values = await _getCarWithBrandQueryHandler.Handle();
+            return Ok(values);
         }
     }
 }
