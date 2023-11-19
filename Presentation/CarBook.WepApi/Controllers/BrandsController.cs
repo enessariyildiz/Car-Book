@@ -11,7 +11,7 @@ namespace CarBook.WepApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandController : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly GetBrandQueryHandler _getBrandQueryHandler;
         private readonly GetBrandByIdQueryHandler _getBrandByIdQueryHandler;
@@ -19,7 +19,7 @@ namespace CarBook.WepApi.Controllers
         private readonly UpdateBrandCommandHandler _updateBrandCommandHandler;
         private readonly RemoveBrandCommandHandler _removeBrandCommandHandler;
 
-        public BrandController(GetBrandQueryHandler getBrandQueryHandler, GetBrandByIdQueryHandler getBrandByIdQueryHandler, CreateBrandCommandHandler createBrandCommandHandler, UpdateBrandCommandHandler updateBrandCommandHandler, RemoveBrandCommandHandler removeBrandCommandHandler)
+        public BrandsController(GetBrandQueryHandler getBrandQueryHandler, GetBrandByIdQueryHandler getBrandByIdQueryHandler, CreateBrandCommandHandler createBrandCommandHandler, UpdateBrandCommandHandler updateBrandCommandHandler, RemoveBrandCommandHandler removeBrandCommandHandler)
         {
             _getBrandQueryHandler = getBrandQueryHandler;
             _getBrandByIdQueryHandler = getBrandByIdQueryHandler;
