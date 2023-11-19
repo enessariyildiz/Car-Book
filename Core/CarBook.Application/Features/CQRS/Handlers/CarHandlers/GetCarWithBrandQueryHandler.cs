@@ -1,24 +1,23 @@
 ﻿using CarBook.Application.Features.CQRS.Results.CarResults;
-using CarBook.Application.Interfaces;
-using CarBook.Domain.Entities;
+using CarBook.Application.Interfaces.CarInterfaces;
 
 namespace CarBook.Application.Features.CQRS.Handlers.CarHandlers
 {
     public class GetCarWithBrandQueryHandler
     {
-        private readonly IRepository<Car> _repository;
+        private readonly ICarRepository _repository;
 
-        public GetCarWithBrandQueryHandler(IRepository<Car> repository)
+        public GetCarWithBrandQueryHandler(ICarRepository repository)
         {
             _repository = repository;
         }
 
-        public async Task<List<GetCarWithBrandQueryResult>> Handle()
+        public List<GetCarWithBrandQueryResult> Handle()
         {
-            var values = await _repository.GetAllAsync();
+            var values = _repository.GetCarsListWithBrand();
             return values.Select(x => new GetCarWithBrandQueryResult
             {
-                BrandName=x.Brand.Name,
+                BrandName = x.Brand.Name,
                 BrandId = x.BrandId,
                 BigImageUrl = x.BigImageUrl,
                 CarId = x.CarId,

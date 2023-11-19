@@ -1,7 +1,6 @@
 ﻿using CarBook.Application.Features.CQRS.Commands.CarCommands;
 using CarBook.Application.Features.CQRS.Handlers.CarHandlers;
 using CarBook.Application.Features.CQRS.Queries.CarQueries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarBook.WepApi.Controllers
@@ -62,10 +61,10 @@ namespace CarBook.WepApi.Controllers
             return Ok("Car information uptaded.");
         }
 
-        [HttpGet("{GetCarWithBrand}")]
-        public async Task<IActionResult> GetCarWithBrand()
+        [HttpGet("GetCarWithBrand")]
+        public IActionResult GetCarWithBrand()
         {
-            var values = await _getCarWithBrandQueryHandler.Handle();
+            var values = _getCarWithBrandQueryHandler.Handle();
             return Ok(values);
         }
     }
