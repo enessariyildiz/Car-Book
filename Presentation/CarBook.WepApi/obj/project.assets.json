@@ -1713,7 +1713,8 @@
         "dependencies": {
           "CarBook.Domain": "1.0.0",
           "MediatR": "12.2.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0"
         },
         "compile": {
           "bin/placeholder/CarBook.Application.dll": {}
