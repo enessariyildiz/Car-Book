@@ -5,5 +5,7 @@ namespace CarBook.Application.Features.Mediator.Queries.FooterAddressQueries
 {
     public class GetFooterAdressQuery : IRequest<List<GetFooterAddresQueryResult>>
     {
+        
+
     }
 }

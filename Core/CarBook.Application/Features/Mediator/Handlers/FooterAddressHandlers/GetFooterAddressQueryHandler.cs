@@ -9,6 +9,10 @@ namespace CarBook.Application.Features.Mediator.Handlers.FooterAddressHandlers
     public class GetFooterAddressQueryHandler : IRequestHandler<GetFooterAdressQuery, List<GetFooterAddresQueryResult>>
     {
         private readonly IRepository<FooterAddress> _repository;
+        public GetFooterAddressQueryHandler(IRepository<FooterAddress> repository)
+        {
+            _repository = repository;
+        }
         public async Task<List<GetFooterAddresQueryResult>> Handle(GetFooterAdressQuery request, CancellationToken cancellationToken)
         {
             var values = await _repository.GetAllAsync();
@@ -17,8 +21,8 @@ namespace CarBook.Application.Features.Mediator.Handlers.FooterAddressHandlers
                 Address = x.Address,
                 Description = x.Description,
                 Email = x.Email,
-                FooterAddressId = x.FooterAddressId,
-                Phone = x.Phone,
+                FooterAddressId= x.FooterAddressId,
+                Phone = x.Phone
             }).ToList();
         }
     }
