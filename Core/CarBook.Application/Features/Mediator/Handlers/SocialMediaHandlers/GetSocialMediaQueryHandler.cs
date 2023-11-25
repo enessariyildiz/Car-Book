@@ -22,6 +22,8 @@ namespace CarBook.Application.Features.Mediator.Handlers.SocialMediaHandlers
             {
                 Name = x.Name,
                 SocialMediaId = x.SocialMediaId,
+                Url = x.Url,
+                Icon = x.Icon,
             }).ToList();
         }
     }
