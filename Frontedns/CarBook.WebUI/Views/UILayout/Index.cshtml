@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -67,6 +66,7 @@
         </div>
     </section>
 
+    @await Component.InvokeAsync("_HeadUILayoutComponentPartial");
     @RenderBody()
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
