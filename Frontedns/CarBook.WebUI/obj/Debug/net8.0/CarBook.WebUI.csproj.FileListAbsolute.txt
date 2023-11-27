@@ -228,3 +228,5 @@ D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\bin\Debug\net8.0\runtim
 D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\obj\Debug\net8.0\CarBook.WebUI.csproj.AssemblyReference.cache
 D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\obj\Debug\net8.0\CarBook.WebUI.csproj.CopyComplete
+D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\bin\Debug\net8.0\CarBook.Dto.dll
+D:\Dev\Software\Projects\CarBook\Frontedns\CarBook.WebUI\bin\Debug\net8.0\CarBook.Dto.pdb
