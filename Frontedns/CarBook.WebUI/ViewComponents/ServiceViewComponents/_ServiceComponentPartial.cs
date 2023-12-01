@@ -13,7 +13,7 @@ namespace CarBook.WebUI.ViewComponents.ServiceViewComponents
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<IViewComponentResult> InkoveAsync()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7194/api/Services");
