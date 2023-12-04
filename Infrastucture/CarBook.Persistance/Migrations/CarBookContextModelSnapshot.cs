@@ -446,7 +446,7 @@ namespace CarBook.Persistance.Migrations
             modelBuilder.Entity("CarBook.Domain.Entities.Blog", b =>
                 {
                     b.HasOne("CarBook.Domain.Entities.Author", "Author")
-                        .WithMany()
+                        .WithMany("Blogs")
                         .HasForeignKey("AuthorID1");
 
                     b.HasOne("CarBook.Domain.Entities.Category", "Category")
@@ -518,6 +518,11 @@ namespace CarBook.Persistance.Migrations
                     b.Navigation("Car");
 
                     b.Navigation("Pricing");
+                });
+
+            modelBuilder.Entity("CarBook.Domain.Entities.Author", b =>
+                {
+                    b.Navigation("Blogs");
                 });
 
             modelBuilder.Entity("CarBook.Domain.Entities.Brand", b =>
