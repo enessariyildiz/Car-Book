@@ -1,25 +1,30 @@
-﻿using CarBook.Application.Features.Mediator.Commands.LocationCommands;
+﻿using CarBook.Application.Features.Mediator.Commands.BlogCommands;
 using CarBook.Application.Interfaces;
 using CarBook.Domain.Entities;
 using MediatR;
 
-namespace CarBook.Application.Features.Mediator.Handlers.LocationHandlers
+namespace CarBook.Application.Features.Mediator.Handlers.BlogHandlers
 {
-    public class CreateServiceCommandHandler : IRequestHandler<CreateLocationCommand>
+    public class CreateServiceCommandHandler : IRequestHandler<CreateBlogCommand>
     {
-        private readonly IRepository<Location> _repository;
+        private readonly IRepository<Blog> _repository;
 
-        public CreateServiceCommandHandler(IRepository<Location> repository)
+        public CreateServiceCommandHandler(IRepository<Blog> repository)
         {
             _repository = repository;
         }
 
-        public async Task Handle(CreateLocationCommand request, CancellationToken cancellationToken)
+        public async Task Handle(CreateBlogCommand request, CancellationToken cancellationToken)
         {
 
-            await _repository.CreateAsync(new Location
+            await _repository.CreateAsync(new Blog
             {
-                Name = request.Name,
+                AuthorID = request.AuthorID,
+                CategoryId = request.CategoryId,
+                CoverImageUrl = request.CoverImageUrl,
+                CreatedDate = request.CreatedDate,
+                Title = request.Title,
+
             });
         }
     }
