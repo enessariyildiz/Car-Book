@@ -18,17 +18,10 @@ namespace CarBook.Application.Features.CQRS.Handlers.CarHandlers
             var values = _repository.GetCarsWithPricings();
             return values.Select(x => new GetCarWithPricingQueryResult
             {
-                BrandName = x.Brand.Name,
-                BrandId = x.BrandId,
-                BigImageUrl = x.BigImageUrl,
-                CarId = x.CarId,
-                CoverImageUrl = x.CoverImageUrl,
-                Fuel = x.Fuel,
-                Km = x.Km,
-                Luggage = x.Luggage,
-                Model = x.Model,
-                Seat = x.Seat,
-                Transmission = x.Transmission,
+                Model = x.Car.Model,
+                CoverImageUrl = x.Car.CoverImageUrl,
+                BrandName = x.Car.Brand.Name,
+                PricingAmount = x.Amount,
             }).ToList();
         }
     }
