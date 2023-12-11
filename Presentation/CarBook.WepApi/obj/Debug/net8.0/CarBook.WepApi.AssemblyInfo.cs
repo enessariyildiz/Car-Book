@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CarBook.WepApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e4d2b14e22f3f172dcefe83c5e17b2b215df334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+759c0d99607f813154dd2dc3b8c788638552d39b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CarBook.WepApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CarBook.WepApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

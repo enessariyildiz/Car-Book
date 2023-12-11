@@ -1,5 +1,4 @@
-﻿using CarBook.Application.Interfaces.CarInterfaces;
-using CarBook.Application.Interfaces.CarPricingInterfaces;
+﻿using CarBook.Application.Interfaces.CarPricingInterfaces;
 using CarBook.Domain.Entities;
 using CarBook.Persistance.Context;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +16,7 @@ namespace CarBook.Persistance.Repositories.CarPricingRepositories
 
         public List<CarPricing> GetCarPricingWithCars()
         {
-            var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).ToList();
+            var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z => z.PricingId == 2).ToList();
             return values;
         }
     }
