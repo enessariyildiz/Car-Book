@@ -1,5 +1,4 @@
-﻿using CarBook.Dto.CarDTOs;
-using CarBook.Dto.CarPricingDTOs;
+﻿using CarBook.Dto.CarPricingDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
